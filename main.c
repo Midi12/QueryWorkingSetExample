@@ -145,5 +145,6 @@ void __cdecl watch_thread(void *arg) {
         }
     }
 
+    free(pwsi);
     SetEvent(params->wait_evt);
 }
